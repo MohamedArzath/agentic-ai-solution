@@ -3,6 +3,8 @@ name = "agentic-trial"
 version = "0.1.0"
 description = "Hands-on AI agent harness: a simple local-model file agent (main.py) and a multi-model agent with MCP tools and long-term memory (agentic_ai.py)."
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     { name = "Mohamed Arzath" }
 ]

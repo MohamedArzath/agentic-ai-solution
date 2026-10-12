@@ -1,4 +1,19 @@
-# Agentic AI Solution
+<div align="center">
+
+# 🤖 Agentic AI Solution
+
+**A from-scratch AI agent harness with local and cloud models, file tools, MCP servers and long-term memory**
+
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![uv](https://img.shields.io/badge/uv-package%20manager-DE5FE9?style=flat&logo=uv&logoColor=white)](https://docs.astral.sh/uv/)
+[![Ollama](https://img.shields.io/badge/Ollama-local%20models-000000?style=flat&logo=ollama&logoColor=white)](https://ollama.com)
+[![MCP](https://img.shields.io/badge/MCP-tools-1A1A1A?style=flat&logo=modelcontextprotocol&logoColor=white)](https://modelcontextprotocol.io)
+[![OpenAI API](https://img.shields.io/badge/API-OpenAI%20compatible-412991?style=flat)](https://platform.openai.com/docs/api-reference/chat)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat)](LICENSE)
+
+</div>
+
+---
 
 A small, readable AI agent harness built from scratch on the OpenAI-compatible Chat Completions API. It contains two agents:
 
@@ -345,6 +360,12 @@ user input ──► messages ──► model ──► tool_calls? ──no─�
 | [openai](https://github.com/openai/openai-python) | Apache-2.0 |
 | [mcp](https://github.com/modelcontextprotocol/python-sdk) | MIT |
 | [pydantic](https://github.com/pydantic/pydantic) | MIT |
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
