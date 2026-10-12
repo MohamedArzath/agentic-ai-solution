@@ -1,0 +1,3 @@
+- The user's name is Arzath and they are 26 years old.
+- Arzath is a Full stack engineer and an AI engineer with skills in Python, FastAPI, Go, PostgreSQL, MySQL, ReactJS, PHP, and Laravel.
+- Arzath has 6 years of experience in software engineering and AI.
