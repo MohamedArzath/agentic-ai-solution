@@ -1,4 +1,4 @@
-# Agentic Trial
+# Agentic AI Solution
 
 A small, readable AI agent harness built from scratch on the OpenAI-compatible Chat Completions API. It contains two agents:
 
@@ -31,7 +31,7 @@ Both agents use the same plain loop: send the conversation to the model, run any
 ## Project structure
 
 ```
-agentic_trial/
+agentic-ai-solution/
 ├── main.py              # simple local-model file agent
 ├── agentic_ai.py        # multi-model agent with MCP + memory
 ├── mcp_servers.json     # MCP servers started by agentic_ai.py
@@ -72,7 +72,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 ```bash
 git clone git@github.com:<your-org>/<your-repo>.git
-cd <your-repo>/agentic_trial
+cd <your-repo>
 ```
 
 **3. Create the virtual environment and install dependencies**
