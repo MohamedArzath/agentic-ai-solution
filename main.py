@@ -6,7 +6,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 from openai import OpenAI
 from pathlib import Path
 
-client = OpenAI(base_url="http://192.168.0.32:11434/v1", api_key="ollama")
+client = OpenAI(base_url="http://localhost:11434/v1", api_key="ollama")
 MODEL="gemma4:12b"
 WORKSPACE=Path(__file__).parent / "src/workspace"
 ASSETS=Path(__file__).parent / "src/assets"
@@ -39,6 +39,7 @@ def create_file(file_name: str, content: str) -> str:
     file_path = resolve_workspace_path(file_name)
     if file_path is None:
         return json.dumps({"error": f"'{file_name}' is outside the workspace."}, indent=2)
+    file_path.parent.mkdir(parents=True, exist_ok=True)  # allow paths like "app/src/App.js"
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(content)
     return json.dumps({"message": f"File '{file_name}' created successfully."}, indent=2)
@@ -71,7 +72,7 @@ TOOLS_DEFINITION = [
         "type": "function",
         "function": {
             "name": "create_file",
-            "description": "Create a new file in the workspace directory with the specified content.",
+            "description": "Create a new file in the workspace directory with the specified content. file_name may include folders (e.g. 'app/src/App.js'); missing folders are created.",
             "parameters": {"type": "object", "properties": {"file_name": {"type": "string"}, "content": {"type": "string"}}},
         },
     },

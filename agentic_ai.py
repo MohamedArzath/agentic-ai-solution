@@ -33,27 +33,27 @@ class ModelConfig(BaseModel):
 
 MODELS: dict[str, ModelConfig] = {
     "local-gemma": ModelConfig(
-        base_url="http://192.168.0.32:11434/v1",
+        base_url="http://localhost:11434/v1",
         api_key="ollama",
         model="gemma4:12b",
     ),
     "local-smallgemma": ModelConfig(
-        base_url="http://192.168.0.32:11434/v1",
+        base_url="http://localhost:11434/v1",
         api_key="ollama",
         model="gemma4:e2b",
     ),
     "local-smallqwen": ModelConfig(
-        base_url="http://192.168.0.32:11434/v1",
+        base_url="http://localhost:11434/v1",
         api_key="ollama",
         model="qwen3.5:2b",
     ),
     "local-phi4": ModelConfig(
-        base_url="http://192.168.0.32:11434/v1",
+        base_url="http://localhost:11434/v1",
         api_key="ollama",
         model="phi4-mini:latest",
     ),
     "local-qwen": ModelConfig(
-        base_url="http://192.168.0.32:11434/v1",
+        base_url="http://localhost:11434/v1",
         api_key="ollama",
         model="qwen2.5-coder:7b",
     ),
